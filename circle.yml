@@ -15,7 +15,7 @@ dependencies:
     - ./build:
         parallel: true
         files:
-          - versions/*
+          - versions/**/tags
     - mkdir -p ~/docker; docker save alpine-builder > ~/docker/builder.tar
     - docker images
 
